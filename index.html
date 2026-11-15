@@ -371,7 +371,7 @@ async function init(){
   $('#social').innerHTML = profile.socials.map(s => {
     const k = s.name.toLowerCase(); const ico = ICONS[k] || ICONS.default;
     return `<a href="${esc(s.url)}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true">${ico}</svg>${esc(s.name)}</a>`; }).join('');
-  const msg = encodeURIComponent('Hola KAPTA, vi su sitio y me gustaría ser parte del grupo.');
+  const msg = encodeURIComponent('Hola, vi su sitio y me gustaría ser parte de KAPTA.');
   $('#hablemos').href = `https://wa.me/${profile.whatsapp}?text=${msg}`;
 
   $('#explore').hidden = !secs.length;
